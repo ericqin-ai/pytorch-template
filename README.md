@@ -1,3 +1,5 @@
+> This repository is a fork of [songquanpeng/pytorch-template](https://github.com/songquanpeng/pytorch-template). Original attribution and upstream links are retained. It is not presented as an original portfolio project.
+
 # PyTorch Template
 > A clear PyTorch template for swift model building.
 
@@ -64,7 +66,14 @@
 ```
 
 ## Others
-I referred [StarGAN v2's official implementation](https://github.com/clovaai/stargan-v2) when crafting this template, 
+I referred [StarGAN v2's official implementation](https://github.com/clovaai/stargan-v2) when crafting this template,
 so don't be surprised if you find some code is similar.
 
 BTW, if you want to deploy your model, you may want to check out [this template](https://github.com/songquanpeng/pytorch-deployment).
+
+
+## Environment and usage notes
+
+Install the historical dependencies from `requirements.txt` in a compatible isolated Python environment. Its PyTorch/torchvision pins include CUDA 10.2 builds and may require the corresponding PyTorch wheel index. No current environment compatibility is claimed. Configure datasets and model options before using the training scripts. See `config.py` and `main.py` for available options. No datasets or pretrained weights are bundled.
+
+The tree above is inherited design documentation; check the actual checkout before following individual paths. No root LICENSE file was found in this fork. Preserve upstream and per-file notices, including StarGAN v2 attribution, and clarify licensing before redistribution.
